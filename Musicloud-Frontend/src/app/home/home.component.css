@@ -5,3 +5,13 @@ img{
 }
 
 
+.navbar{
+  /*text-shadow: black;*/
+  text-shadow: 2px 2px black;
+  padding-bottom: 1rem;
+}
+
+/*.navbar{*/
+/*  justify-content: space-between;*/
+
+/*}*/
