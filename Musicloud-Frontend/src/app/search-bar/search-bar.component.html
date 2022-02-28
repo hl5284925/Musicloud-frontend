@@ -2,7 +2,7 @@
 <nav class = "navbar" navbar-light bg-light>
 <form>
   <div class="form-group">
-    <input type="text" name = "search" [(ngModel)]="searchStr"  placeholder = "Search your song..."/>
+    <input type="text" name = "search" [(ngModel)]="search" (keyup)="searchSong(search)" placeholder = "Search your song..."/>
     <button class="btn btn-outline-success" type="submit">Search</button>
   </div>
 </form>

@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { AboutComponent } from './about/about.component';
 import {FormsModule} from "@angular/forms";
-import { SongListComponent } from './song-list/song-list.component';
+
 
 
 @NgModule({
@@ -17,8 +17,7 @@ import { SongListComponent } from './song-list/song-list.component';
     HomeComponent,
     NavbarComponent,
     SearchBarComponent,
-    AboutComponent,
-    SongListComponent
+    AboutComponent
   ],
     imports: [
         BrowserModule,

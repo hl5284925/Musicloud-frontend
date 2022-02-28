@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
-  searchStr: string ="saerch...";
+  search: string ='';
 
 
   searchSong(song:any){
