@@ -12,7 +12,7 @@ export const songs =[
     artist: "artist1",
     title: "title1",
     language:"language1",
-    year: 2021
+    year: 2021,
   },
 
   {

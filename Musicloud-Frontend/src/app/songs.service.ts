@@ -4,30 +4,33 @@ import {Observable} from "rxjs";
 
 
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class SongsService {
+songs:any;
 
-private apiUrl = 'http:/morning-lowlands-30800.herokuapp.com';
+private apiUrl = 'http://morning-lowlands-30800.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 
-  public getAllSongs():Observable<any>{
-    return this.http.get<SongsService>(`${this.apiUrl}/api/songs/`)
+  public getAllSongs(search: string):any {
+    return this.http.get(`${this.apiUrl}/api/songs/`)
+
   }
 
-  public createSong(song: SongsService){
-    return this.http.post<SongsService>(`${this.apiUrl}/api/songs/`,song)
+
+
+  public createSong(song: any){
+    return this.http.post(`${this.apiUrl}/api/songs/`,song)
   }
 
-  public getSong(song: SongsService):Observable<any>{
-    return this.http.get<SongsService>(`${this.apiUrl}/api/songs/`)
+  public getSong(song: any):Observable<any>{
+    return this.http.get(`${this.apiUrl}/api/songs/`)
   }
 
-  public updateSong(song: SongsService):Observable<any>{
-    return this.http.put<SongsService>(`${this.apiUrl}/api/songs/id`,song)
+  public updateSong(song: any):Observable<any>{
+    return this.http.put(`${this.apiUrl}/api/songs/id`,song)
   }
 
   public deleteSong(id: number):Observable<void>{

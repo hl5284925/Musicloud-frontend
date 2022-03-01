@@ -5,7 +5,8 @@ import {AboutComponent} from "./about/about.component";
 import {SearchBarComponent} from "./search-bar/search-bar.component";
 
 const routes: Routes = [
-  {path:'', component:HomeComponent}
+  {path:'', component:HomeComponent},
+  {path:'about',component:AboutComponent}
 ];
 
 @NgModule({

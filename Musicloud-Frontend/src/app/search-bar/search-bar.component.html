@@ -1,10 +1,15 @@
-<p>Search</p>
-<nav class = "navbar" navbar-light bg-light>
+
+<nav class = "searchbar" >
 <form>
   <div class="form-group">
-    <input type="text" name = "search" [(ngModel)]="search" (keyup)="searchSong(search)" placeholder = "Search your song..."/>
+    <input type="text" name = "search" [(ngModel)]="search" (keyup)="getAllSongs(search)" placeholder = "Search your song..."/>
     <button class="btn btn-outline-success" type="submit">Search</button>
   </div>
 </form>
 </nav>
+
+
+
+
+
 

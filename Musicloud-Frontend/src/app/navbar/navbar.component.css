@@ -1,6 +1,44 @@
+/*.navbar{*/
+/*  padding: 0px;*/
+/*  margin: 0px;*/
+/*  background-color: slateblue;*/
+/*  width: 100%;*/
+/*  height: 4em;*/
+/*}*/
 
+/*.logo{*/
+/*  background-color: cornflowerblue;*/
+/*  height: 4em;*/
+/*  width: 4em;*/
+/*  padding: 0px;*/
+/*  margin: 0px;*/
+/*}*/
+
+/*img{*/
+/*  height: 100px;*/
+/*}*/
+
+
+.navbar{
+  padding: 0px;
+  margin: 0px;
+  background-color:mediumpurple;
+  width: 100%;
+  height: 4em;
+}
+
+.logo{
+  background-color: mediumpurple;
+  height: 4em;
+  width: 4em;
+  padding: 0px;
+  margin: 0px;
+}
 
 img{
   height: 100px;
 }
+
+
+
 

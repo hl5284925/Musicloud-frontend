@@ -1,4 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {SongsService} from "../songs.service";
+import {Subject} from "rxjs";
+import {songs} from "../songs";
 
 @Component({
   selector: 'app-home',
@@ -6,8 +9,14 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+title:string ='';
+  song:any;
+searchSubject = new Subject();
 
 
+  setVolume(){
+    console.log("testing volume function");
+  }
   play() {
 
     console.log("play is working")
@@ -21,10 +30,23 @@ export class HomeComponent implements OnInit {
 
   }
 
-  constructor() {
+  constructor(private songsService: SongsService) {
   }
 
+  getAllSongs(title:string){
+    this.searchSubject.next(title)
+  }
   ngOnInit(): void {
+
+    this.searchSubject
+      .subscribe(song => {
+        this.songsService.getSong(song)
+          .subscribe(response =>{
+            console.log(response)
+            this.song = response;
+          })
+      })
+
 
 
   }

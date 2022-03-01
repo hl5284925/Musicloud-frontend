@@ -1,25 +1,25 @@
 
-<h1>Musicloud, welcome</h1>
+<div class="p-3 pb-md-4 mx-auto text-center">
+  <h1 class="display-1 fw-normal text-light shadow-lg header">Musicloud</h1>
+  <p class="fs-5 text-muted">Welcome to Musicloud</p>
+</div>
 
 <div>
-
   <img src= "https://c.tenor.com/2ll51f5v1aAAAAAC/music-head-shake.gif" />
 </div>
 
 
+<section *ngIf="song">
+  <div class ="song-info">
+    <h2>{{song.title}}</h2>
+    <p>Artist: {{song.artist}}</p>
+    <p>Name: {{song.title}}</p>
+    <p>Music Number: {{song.id}}</p>
+    <p>Language: {{song.language}}</p>
+    <p>Publish Year:{{song.year}}</p>
+  </div>
+</section>
 
-
-<div class ="home-details">
-  <h2>song.title</h2>
-  <p>Artist: song.artist</p>
-  <p>Name: song.title</p>
-  <p>Music Number: song.id</p>
-  <p>Language: song.language</p>
-  <p>Publish Year:song.year</p>
-
-  <p></p>
-
-</div>
 
 <div class = "play-action">
   <button (click)="play()">Play</button>
@@ -30,6 +30,10 @@
 <audio controls >
 
 </audio>
+
+<div>
+  <input type = "range" min="0" max="1" step="0.01" value ="0.5" (input)="setVolume()">
+</div>
 
 <footer class="text-muted bg-dark">
   <div class="container">
