@@ -9,14 +9,17 @@
 </form>
 </nav>
 
+
 <section *ngIf="song">
   <div class ="song-info">
     <h2>You searched for song: {{song.title}}</h2>
-    <p>Artist: {{song.artist}}</p>
-    <p>Name: {{song.title}}</p>
-    <p>Music Number: {{song.id}}</p>
-    <p>Language: {{song.language}}</p>
-    <p>Publish Year:{{song.year}}</p>
+    <div class="music-text">
+     <p>Artist: {{song.artist}}</p>
+     <p>Name: {{song.title}}</p>
+     <p>Music Tracking ID: {{song.id}}</p>
+     <p>Language: {{song.language}}</p>
+     <p>Publish Year:{{song.year}}</p>
+    </div>
   </div>
 </section>
 

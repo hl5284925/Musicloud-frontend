@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
 import {SongsService} from "../songs.service";
-import {songs} from "../songs";
-// import {songs} from "../songs";
 
 @Component({
   selector: 'app-search-bar',

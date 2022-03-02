@@ -1,14 +1,12 @@
-
+<body class="body-main">
 <div class="text container">
   <h1 class="display-1 fw-normal text-light shadow-lg header">Musicloud</h1>
   <h2>Welcome to Musicloud Zone</h2>
 </div>
 <app-search-bar></app-search-bar>
-<div>
+<div class = "main-img">
   <img src= "https://c.tenor.com/2ll51f5v1aAAAAAC/music-head-shake.gif" />
 </div>
-
-
 
 
 <div class = "play-action">
@@ -17,12 +15,15 @@
   <button (click)="stop()">Stop</button>
 </div>
 
+<div class = "audio-control">
 <audio controls >
-
 </audio>
+</div>
 
-<div>
+<div class ="volume-control">
   <input type = "range" min="0" max="1" step="0.01" value ="0.5" (input)="setVolume()">
 </div>
+</body>
+
 
 

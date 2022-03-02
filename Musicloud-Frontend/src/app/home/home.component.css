@@ -1,6 +1,10 @@
 
-img {
+.main-img {
   width: 50vw;
+  display: flex;
+  justify-content: center;
+  padding: 30px 30%;
+  margin:0 auto
 
 }
 
@@ -26,3 +30,21 @@ img {
 .text container{
   justify-content: center;
 }
+
+.play-action{
+  display: flex;
+  justify-content: center;
+  padding: 20px 45%;
+  font-size: 90px;
+}
+
+.audio-control{
+  padding: 30px 45%;
+}
+
+.volume-control{
+  padding: 30px 45%;
+}
+
+
+
