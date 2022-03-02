@@ -21,5 +21,5 @@
 
 # Challenges:
 - I was not be able to deploy to Heroku, it turned out bcoz the Java version in Heroku is incompatible.
-- I had issue with popping out search results once I input search.
+- I had issue with popping out search results once I inputed search information.
 - I wanted to make the webpage play the song audio, but still haven't worked out yet.
