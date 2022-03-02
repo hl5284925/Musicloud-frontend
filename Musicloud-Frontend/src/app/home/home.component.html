@@ -1,24 +1,14 @@
 
-<div class="p-3 pb-md-4 mx-auto text-center">
+<div class="text container">
   <h1 class="display-1 fw-normal text-light shadow-lg header">Musicloud</h1>
-  <p class="fs-5 text-muted">Welcome to Musicloud</p>
+  <h2>Welcome to Musicloud Zone</h2>
 </div>
-
+<app-search-bar></app-search-bar>
 <div>
   <img src= "https://c.tenor.com/2ll51f5v1aAAAAAC/music-head-shake.gif" />
 </div>
 
 
-<section *ngIf="song">
-  <div class ="song-info">
-    <h2>{{song.title}}</h2>
-    <p>Artist: {{song.artist}}</p>
-    <p>Name: {{song.title}}</p>
-    <p>Music Number: {{song.id}}</p>
-    <p>Language: {{song.language}}</p>
-    <p>Publish Year:{{song.year}}</p>
-  </div>
-</section>
 
 
 <div class = "play-action">
@@ -35,11 +25,4 @@
   <input type = "range" min="0" max="1" step="0.01" value ="0.5" (input)="setVolume()">
 </div>
 
-<footer class="text-muted bg-dark">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Musicloud &copy; 2022</p>
-  </div>
-</footer>
+

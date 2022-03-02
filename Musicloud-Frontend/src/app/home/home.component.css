@@ -1,15 +1,15 @@
 
-
 img {
-
   width: 50vw;
 
 }
 
 .navbar{
-  /*text-shadow: black;*/
-  text-shadow: 2px 2px black;
-  padding-bottom: 1rem;
+  padding: 0px;
+  margin: 0px;
+  background-color:mediumpurple;
+  width: 100%;
+  height: 4em;
 }
 
 .carousel-container{
@@ -20,5 +20,9 @@ img {
 
 .logo{
   width: 5rem;
+}
 
+
+.text container{
+  justify-content: center;
 }

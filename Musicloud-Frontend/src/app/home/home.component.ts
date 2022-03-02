@@ -10,7 +10,7 @@ import {songs} from "../songs";
 })
 export class HomeComponent implements OnInit {
 title:string ='';
-  song:any;
+  song:any =this.songsService.oneSong;
 searchSubject = new Subject();
 
 
@@ -33,19 +33,19 @@ searchSubject = new Subject();
   constructor(private songsService: SongsService) {
   }
 
-  getAllSongs(title:string){
+  getSong(title:string){
     this.searchSubject.next(title)
   }
   ngOnInit(): void {
 
-    this.searchSubject
-      .subscribe(song => {
-        this.songsService.getSong(song)
-          .subscribe(response =>{
-            console.log(response)
-            this.song = response;
-          })
-      })
+    // this.searchSubject
+    //   .subscribe(song => {
+    // //    this.songsService.getSong()
+    //       .subscribe(response =>{
+    //         console.log(response)
+    //         this.song = response;
+    //       })
+    //  })
 
 
 

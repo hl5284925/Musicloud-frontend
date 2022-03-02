@@ -2,12 +2,23 @@
 <nav class = "searchbar" >
 <form>
   <div class="form-group">
-    <input type="text" name = "search" [(ngModel)]="search" (keyup)="getAllSongs(search)" placeholder = "Search your song..."/>
+    <input type="text" name = "search" size ="100" [(ngModel)]="search" (keyup)="getSong(search)" placeholder = "Search your song..."/>
+    <i class="fa-solid fa-magnifying-glass"></i>
     <button class="btn btn-outline-success" type="submit">Search</button>
   </div>
 </form>
 </nav>
 
+<section *ngIf="song">
+  <div class ="song-info">
+    <h2>You searched for song: {{song.title}}</h2>
+    <p>Artist: {{song.artist}}</p>
+    <p>Name: {{song.title}}</p>
+    <p>Music Number: {{song.id}}</p>
+    <p>Language: {{song.language}}</p>
+    <p>Publish Year:{{song.year}}</p>
+  </div>
+</section>
 
 
 

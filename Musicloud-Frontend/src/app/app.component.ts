@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
   constructor(private songsService:SongsService) {}
 
   ngOnInit() {
-
+this.songsService.getAllSongs();
   }
 
 
